@@ -38,17 +38,4 @@ contactLinks.forEach(link => {
     link.style.color = "#7ef9f9";
     link.style.textShadow = "none";
   });
-  // Smooth fade-in for all cards
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card");
-
-  cards.forEach((card, index) => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(30px)";
-    setTimeout(() => {
-      card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
-    }, index * 150);
-  });
 });

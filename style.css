@@ -1,40 +1,48 @@
 body {
-  background-color: #0f1117;
-  font-family: 'Fira Code', monospace;
-  color: #00ffcc;
   margin: 0;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+  font-family: 'Fira Code', monospace;
+  background: linear-gradient(to bottom right, #0f172a, #0f766e);
+  color: white;
+  padding: 2rem;
 }
 
-.terminal-text {
-  background-color: #1e1e1e;
-  color: #00ffcc;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #00ffcc55;
-  width: 90%;
+.container {
   max-width: 800px;
-  font-size: 16px;
-  white-space: pre-wrap;
-  min-height: 200px;
+  margin: auto;
 }
 
-.contact {
-  margin-top: 30px;
-  font-size: 14px;
-  color: #bbbbbb;
+.glow {
+  font-size: 3rem;
+  text-align: center;
+  color: #00f5d4;
+  text-shadow: 0 0 8px #00f5d4;
 }
 
-.contact a {
-  color: #00ffcc;
+.tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  color: #7ef9f9;
+}
+
+a {
+  color: #7ef9f9;
   text-decoration: none;
-  margin: 0 10px;
 }
 
-.contact a:hover {
+a:hover {
   text-decoration: underline;
 }

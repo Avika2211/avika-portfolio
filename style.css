@@ -1,0 +1,93 @@
+:root {
+  --bg: #0f172a;
+  --text: white;
+  --accent: #5eead4;
+  --card: rgba(255, 255, 255, 0.05);
+}
+.light-mode {
+  --bg: #f0f9ff;
+  --text: #0f172a;
+  --accent: #0d9488;
+  --card: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--card);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+}
+.icons a {
+  color: var(--text);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.icons a:hover {
+  color: var(--accent);
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 999;
+}

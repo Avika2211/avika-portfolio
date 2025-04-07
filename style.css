@@ -1,65 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom right, #0f172a, #1e293b, #0f766e);
-  color: white;
-  padding: 20px;
+  background-color: #0f1117;
+  font-family: 'Fira Code', monospace;
+  color: #00ffcc;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 30px;
+.terminal-text {
+  background-color: #1e1e1e;
+  color: #00ffcc;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffcc55;
+  width: 90%;
+  max-width: 800px;
+  font-size: 16px;
+  white-space: pre-wrap;
+  min-height: 200px;
 }
 
-h1 {
-  font-size: 3rem;
-  color: #14b8a6;
+.contact {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #bbbbbb;
 }
 
-p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-
-main {
-  display: grid;
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-}
-
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-.socials a {
-  margin-right: 15px;
-  color: #14b8a6;
+.contact a {
+  color: #00ffcc;
   text-decoration: none;
-  font-weight: bold;
+  margin: 0 10px;
 }
 
-canvas {
-  width: 100%;
-  height: 500px;
-  display: block;
-  background: #111;
-  border-radius: 15px;
+.contact a:hover {
+  text-decoration: underline;
 }

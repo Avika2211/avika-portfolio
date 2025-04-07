@@ -2,36 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Avika Joshi | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avika Joshi - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
-  <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+  <header>
+    <h1>Avika Joshi</h1>
+    <p>AI | Quantum | Dev | PR | Climate | Dance | Passion</p>
+  </header>
 
-  <div class="container">
-    <h1 id="main-title">Avika Joshi</h1>
-    <p class="tagline">AI | Quantum | Dev | PR | Climate | Dance | Passion</p>
-
-    <section class="card fade-in">
+  <main>
+    <section class="card">
       <h2>About Me</h2>
-      <p>I'm a passionate technologist working at the intersection of AI, Quantum Computing, and Climate. From leading community initiatives to winning the Harvard HPAIR Impact Challenge, my journey is a vibrant mix of coding, science, and cultural expression.</p>
+      <p>
+        I'm a passionate technologist working at the intersection of AI,
+        Quantum Computing, and Climate. From leading community initiatives
+        to winning the Harvard HPAIR Impact Challenge, my journey is a
+        vibrant mix of coding, science, and cultural expression.
+      </p>
     </section>
 
-    <section class="card fade-in">
+    <section class="card">
       <h2>Experience</h2>
       <ul>
         <li>Winner & Keynote Speaker | Harvard HPAIR Impact Challenge</li>
-        <li>Research Intern at University of Cambridge</li>
         <li>Apprentice at GUVI | IITM Research Park</li>
-        <li>Market Research Intern at Walford Capitals | IIT Madras</li>
-        <li>Climate Champion & Specialist | UNICEF YuWaah</li>
+        <li>Market Research Intern | Walford Capitals</li>
+        <li>Climate Champion | UNICEF YuWaah</li>
         <li>App Dev Intern | Agritroniix</li>
         <li>PR Executive | TEDxDTU, Cosmology Club</li>
       </ul>
     </section>
 
-    <section class="card fade-in">
+    <section class="card">
       <h2>Projects</h2>
       <ul>
         <li><strong>JalKotha</strong> - AI + TK-based Flood Resilience Network</li>
@@ -41,15 +47,20 @@
       </ul>
     </section>
 
-    <section class="card fade-in">
+    <section class="card">
       <h2>Contact</h2>
-      <div class="icons">
-        <a href="mailto:avikajoshi@email.com" onclick="contactAlert()">📧</a>
-        <a href="https://github.com/Avika2211" target="_blank">💻</a>
-        <a href="https://linkedin.com/in/avika-joshi-162782307" target="_blank">🔗</a>
+      <div class="socials">
+        <a href="mailto:avikajoshi@email.com">📧 Email</a>
+        <a href="https://github.com/Avika2211" target="_blank">🐙 GitHub</a>
+        <a href="https://linkedin.com/in/avika-joshi-162782307" target="_blank">💼 LinkedIn</a>
       </div>
     </section>
-  </div>
+
+    <section class="card">
+      <h2>Kathak Dance (3D)</h2>
+      <canvas id="dancerCanvas"></canvas>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
